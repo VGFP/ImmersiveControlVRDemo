@@ -69,10 +69,10 @@
             camera.attachControl(canvas, true);
             var light = new BABYLON.HemisphericLight("light1", new BABYLON.Vector3(0, 1, 0), scene);
             light.intensity = 0.7;
-            var mainTextureUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/blob/main/assets/4k_makemake_fictional.jpg"
-            var normalMapUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/blob/main/assets/normal_map.png"
-            var specularMapUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/blob/main/assets/specular_map.png"
-            var backgroundUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/blob/main/assets/8k_stars_milky_way.png"
+            var mainTextureUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/main/assets/4k_makemake_fictional.jpg"
+            var normalMapUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/main/assets/normal_map.png"
+            var specularMapUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/main/assets/specular_map.png"
+            var backgroundUrl = "https://cdn.statically.io/gh/VGFP/ImmersiveControlVRDemo/main/assets/8k_stars_milky_way.png"
         
             // Load textures from S3 URLs
             var mainTexture = new BABYLON.Texture(mainTextureUrl, scene);
