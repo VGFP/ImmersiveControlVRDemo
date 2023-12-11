@@ -81,7 +81,14 @@
             var sphere = BABYLON.Mesh.CreateSphere("sphere1", 32, 2, scene);
             sphere.position.y = 2;
             sphere.position.z = 5;
+
+            var axis = new BABYLON.Vector3(0, 1, 0);
+            var angle = 0.0001; // The angle of rotation
         
+            // Register a function to execute after each render
+            scene.registerAfterRender(function () {
+                sphere.rotate(axis, angle, BABYLON.Space.LOCAL);
+            });
         
             // Create a standard material and assign the textures
             var material = new BABYLON.StandardMaterial("material", scene);
